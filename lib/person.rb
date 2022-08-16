@@ -1,7 +1,6 @@
 class Person
 
-  def balance
-    0
+  def initialize(account = BankAccount.new)
+    @account = BankAccount.new
   end
-
 end
