@@ -7,4 +7,8 @@ class BankAccount
   def increase_balance(amount)
     @balance += amount
   end
+
+  def withdraw_amount(amount)
+    @balance -= amount
+  end
 end

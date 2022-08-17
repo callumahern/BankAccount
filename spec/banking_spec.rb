@@ -1,5 +1,5 @@
 require 'pry'
-require 'person'
+require 'customer'
 require 'bank_account'
 
 RSpec.describe 'Bank' do
@@ -12,5 +12,14 @@ RSpec.describe 'Bank' do
     @account = BankAccount.new
     @account.increase_balance(1)
     expect(@account.balance).to eq 1
+  end
+
+  before do
+    @account = BankAccount.new
+    @account.increase_balance(1)
+  end
+  it 'withdraws 1 from balance' do
+    @account.withdraw_amount(1)
+    expect(@account.balance).to eq 0
   end
 end
