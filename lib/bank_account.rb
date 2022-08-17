@@ -11,4 +11,8 @@ class BankAccount
   def withdraw_amount(amount)
     @balance -= amount
   end
+
+  def check_balance
+    @balance
+  end
 end
