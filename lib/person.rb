@@ -1,4 +1,4 @@
-class Person
+class Customer
 
   def initialize(account = BankAccount.new)
     @account = BankAccount.new
